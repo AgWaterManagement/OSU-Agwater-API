@@ -1,0 +1,6 @@
+.env
+/.vs
+/.__pycache__
+/Old
+
+*.config

@@ -1,12 +1,12 @@
 from flask import Flask, request
 from routes import articles_bp, data_bp, energy_bp, email_bp
 from config import config_by_name
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import logging
 import os
 
 # Load environment variables from .env file
-load_dotenv()
+#load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)

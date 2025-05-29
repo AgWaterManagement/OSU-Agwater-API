@@ -1,0 +1,8 @@
+2025-05-29 15:34:19,123 - INFO - API Call: GET /Search | Parameters: {} | Body: None
+2025-05-29 15:36:43,302 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'water'} | Body: None
+2025-05-29 15:47:33,838 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'water'} | Body: None
+2025-05-29 15:51:53,391 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'water'} | Body: None
+2025-05-29 15:52:09,130 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'heat'} | Body: None
+2025-05-29 15:53:12,364 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'and'} | Body: None
+2025-05-29 15:53:18,353 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'and'} | Body: None
+2025-05-29 15:58:17,873 - INFO - API Call: GET /SearchArticles | Parameters: {'keywords': 'water'} | Body: None

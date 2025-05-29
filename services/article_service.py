@@ -3,28 +3,6 @@ import json
 import xml.etree.ElementTree as ET
 from utils.helpers import sort_list_of_dicts
 
-''' deprecated '''
-def get_article_list():
-    folder_path = 'd:/Websites/AgWaterReact/public/articles'
-    articles = []
-
-    for filename in os.listdir(folder_path):
-        if filename.endswith(".xml"):
-            file_path = os.path.join(folder_path, filename)
-            try:
-                tree = ET.parse(file_path)
-                root = tree.getroot()
-                article = {e: root.find(f".//{e}").text or '' for e in [
-                    'keywords', 'title', 'subtitle', 'lead_author', 'additional_authors',
-                    'site', 'avatar', 'pub_date', 'link', 'cover_image', 'body_html'
-                ]}
-                articles.append(article)
-            except ET.ParseError:
-                return f"Error parsing {file_path}"
-
-    articles = sort_list_of_dicts(articles, key="pub_date")
-    return json.dumps(articles)
-
 
 def get_articleInfo(info_type):
     if info_type not in ['articles', 'sites', 'authors']:
@@ -34,7 +12,7 @@ def get_articleInfo(info_type):
     info=None
     if not os.path.exists(path):
         return json.dumps({'error': 'articles.json not found'})
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
         info = data.get(info_type, [])
     if not info:
@@ -58,10 +36,12 @@ def get_authors():
     return json.dumps(articles)
 
 
-def search_articles(search_str):
+def search_articles(keywords):
     articles = get_articleInfo('articles')
     matching_articles = []
-    
+
+    search_strs = keywords.lower().split()
+
     # iterate through articles json and check if any of the search strings are in the title, abstract, tags, authors, sites or body_html
     for article in articles:
         title = article.get('title', '').lower()
@@ -82,7 +62,10 @@ def search_articles(search_str):
     return {'article_titles': matching_articles}
 
 def update_articles(articles):
-    folder_path = 'd:/Websites/AgWaterReact/public/articles'
-    articles = json.loads(articles)
 
-    return json.dumps(updated_articles)
+    articles = get_articleInfo('articles')
+    sites = get_articleInfo('sites')
+    authors = get_articleInfo('authors')
+    return json.dumps(articles)
+
+

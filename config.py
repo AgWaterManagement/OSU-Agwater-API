@@ -9,8 +9,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Paths
-    AG_WATER_PATH = os.environ.get('AG_WATER_PATH', 'd:/Websites/AgWaterReact')
-    IRRIGATION_DB_PATH = os.environ.get('IRRIGATION_DB_PATH', 'D:/Websites/AgWaterreact/src/pages/IrrigUseNW/Data/IrrigUse.sqlite')
+    AG_WATER_PATH = os.environ.get('AG_WATER_PATH', 'd:/Websites/AgWaterWebsite')
+    IRRIGATION_DB_PATH = os.environ.get('IRRIGATION_DB_PATH', 'D:/Websites/AgWaterWebsite/src/pages/IrrigUseNW/Data/IrrigUse.sqlite')
 
     # Email settings
     SMTP_SERVER = os.environ.get('SMTP_SERVER', 'mail.engr.oregonstate.edu')

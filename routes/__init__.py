@@ -1,5 +1,5 @@
 # import Blueprints
-#from .articles import bp as articles_bp
+from .articles import bp as articles_bp
 from .data import bp as data_bp
 from .energy import bp as energy_bp
 from .email import bp as email_bp

@@ -1,11 +1,20 @@
 from flask import Blueprint, request
-from services.article_service import get_article_list, search_articles, update_articles
+from services.article_service import get_articles, get_sites, get_authors, search_articles, update_articles
 
 bp = Blueprint('articles', __name__)
 
 @bp.route("/GetArticleList")
-def get_article_list_route():
-    return get_article_list()
+def get_articles_route():
+    return get_articles()
+
+@bp.route("/GetArticleSites")
+def get_sites_route():
+    return get_sites()
+
+@bp.route("/GetArticleAuthors")
+def get_authors_route():
+    return get_authors()
+
 
 @bp.route("/Update")
 def update_articles_route():

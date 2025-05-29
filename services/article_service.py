@@ -25,36 +25,59 @@ def get_article_list():
     articles = sort_list_of_dicts(articles, key="pub_date")
     return json.dumps(articles)
 
-def search_articles(search_str):
-    folder_path = '/Websites/AgWaterWebsite/public/articles/'
 
-    search_strs = search_str.replace(',', ' ').replace(';', ' ').split()
-    matching_articles = []
-
-    # load articles.json to get the list of articles
-    articles_file_path = os.path.join(folder_path, 'articles.json')
-    if not os.path.exists(articles_file_path):
-        return json.dumps({'article_titles': []})
+def get_articleInfo(info_type):
+    if info_type not in ['articles', 'sites', 'authors']:
+        return json.dumps({'error': 'Invalid article type'})
     
-    with open(articles_file_path, 'r') as f:
-        articles_data = json.load(f)
+    path = '/Websites/AgWaterAPI/services/articles.json'
+    info=None
+    if not os.path.exists(path):
+        return json.dumps({'error': 'articles.json not found'})
+    with open(path, 'r') as f:
+        data = json.load(f)
+        info = data.get(info_type, [])
+    if not info:
+        return json.dumps({'error': f'No {info_type} found'})
+    
+    return info
 
-        # iterate through articles json and check if any of the search strings are in the title, abstract, tags, authors, sites or body_html
-        for article in articles_data:
-            title = article.get('title', '').lower()
-            abstract = article.get('abstract', '').lower()
-            tags = [tag.lower() for tag in article.get('tags', [])]
-            authors = [article.get('lead_author', '').lower()] + [a.lower() for a in article.get('additional_authors', [])]
-            sites = [article.get('lead_site', '').lower()] + [s.lower() for s in article.get('additional_sites', [])]
-            body_html = article.get('body_html', '').lower()
+def get_articles():
+    articles = get_articleInfo('articles')
 
-            if any(search_str in title for search_str in search_strs) or \
-               any(search_str in abstract for search_str in search_strs) or \
-               any(search_str in tag for tag in tags for search_str in search_strs) or \
-               any(search_str in author for author in authors for search_str in search_strs) or \
-               any(search_str in site for site in sites for search_str in search_strs) or \
-               any(search_str in body_html for search_str in search_strs):
-                matching_articles.append(article['title'])
+    # Sort articles by pub_date
+    articles = sort_list_of_dicts(articles, key="pub_date")
+    return json.dumps(articles)
+
+def get_sites():
+    articles = get_articleInfo('sites')
+    return json.dumps(articles)
+
+def get_authors():
+    articles = get_articleInfo('authors')
+    return json.dumps(articles)
+
+
+def search_articles(search_str):
+    articles = get_articleInfo('articles')
+    matching_articles = []
+    
+    # iterate through articles json and check if any of the search strings are in the title, abstract, tags, authors, sites or body_html
+    for article in articles:
+        title = article.get('title', '').lower()
+        abstract = article.get('abstract', '').lower()
+        tags = [tag.lower() for tag in article.get('tags', [])]
+        authors = [article.get('lead_author', '').lower()] + [a.lower() for a in article.get('additional_authors', [])]
+        sites = [article.get('lead_site', '').lower()] + [s.lower() for s in article.get('additional_sites', [])]
+        body_html = article.get('body_html', '').lower()
+
+        if any(search_str in title for search_str in search_strs) or \
+           any(search_str in abstract for search_str in search_strs) or \
+           any(search_str in tag for tag in tags for search_str in search_strs) or \
+           any(search_str in author for author in authors for search_str in search_strs) or \
+           any(search_str in site for site in sites for search_str in search_strs) or \
+           any(search_str in body_html for search_str in search_strs):
+            matching_articles.append(article['title'])
 
     return {'article_titles': matching_articles}
 

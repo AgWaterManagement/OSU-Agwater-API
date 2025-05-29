@@ -1,0 +1,100 @@
+{
+  "authors": [
+    {"name": "Maria Zamora Re, Ph.D.", "avatar": "MariaZamora.jpg"},
+    {"name": "Berit Dinsdale, Ph.D.","avatar": "BeritDinsdale.jpg"},
+    {"name": "Abigail Tomasek, Ph.D.", "avatar": "" },
+    {"name": "John Bolte, Ph.D.","avatar": "bolte.jpg"},
+    {"name": "Nicholas Le","avatar": "OPEnS.png"}
+  ],
+
+  "sites": [
+    {"name": "Oregon State University"},
+    {"name": "OSU-Madras"},
+    {"name": "Washington State Univeristy" },
+    {"name": "BLM-Agrimet"}
+  ],
+
+  "articles": [
+    {
+      "tags": [ "climate", "drought", "needs assessment" ],
+      "validated": true,
+      "title": "Beat The Heat",
+      "subtitle": "Mitigating Heat Damage in Caneberries",
+      "lead_author": "Maria Zamora Re, Ph.D.",
+      "additional_authors": [],
+      "lead_site": "Oregon State University",
+      "additional_sites": [ "Washington State University", "US Geological Survey" ],
+      "pub_date": "01/03/2023",
+      "url": "https://extension.wsu.edu/beat-the-heat/",
+      "avatar": "MariaZamora.jpg",
+      "cover_image": "https://s3.wp.wsu.edu/uploads/sites/3274/2023/05/IMG_1261-1-scaled.jpg",
+      "abstract": "Rising summer temperatures are altering the way we grow a variety of fruits, including caneberries like raspberries and blackberries. THis article will help manage this challenge",
+      "body_html": "<p>Rising summer temperatures are altering the way we grow a variety of fruits, including caneberries like raspberries and blackberries.This website will inform readers on topics like why heat stress is a concern for food production, the genetics and physiology of heat tolerance,and methods to manage heat stress through evaporative cooling and more. We will share a mixture of blog posts, photos, and videos to help educateand enable farmers to “beat the heat” while maximizing yield, profits, and produce quality.  This project is multi-institutional with Oregon State University and the USDA. It includes research and extension components.</p>"
+    },
+    {
+      "tags": [ "climate", "drought", "needs assessment" ],
+      "validated": true,
+      "title": "Drought and Heat Needs Assessment",
+      "subtitle": "Identifying needs of Oregon farmers and ranchers in the face a a warming climate",
+      "lead_author": "Berit Dinsdale, Ph.D.",
+      "additional_authors": [ "María Zamora Re, Ph.D", "Abigail Tomasek, Ph.D." ],
+      "lead_site": "Oregon State University",
+      "additional_sites": [],
+      "pub_date": "02/01/2024",
+      "url": "https://storymaps.arcgis.com/stories/25fe209637ad451aa6d35f0d70b2ddca",
+      "avatar": "BeritDinsdale.jpg",
+      "cover_image": "https://extension.oregonstate.edu/sites/default/files/styles/full/public/images/2023-06/20230426_151946.jpg",
+      "abstract": "Farmers and ranchers across Oregon are increasingly facing challenges related to extreme drought and heat. This article reports on an statewide needs assessment conducted by the Oregon State University Extension Service intended to help frame and inform future policies and decision-making related to drought and heat in Oregon agriculture",
+      "body_html": "<p>Farmers and ranchers across Oregon are increasingly facing challenges related to extreme drought and heat. While emergency funds have been made available to producers impacted by these pressures in recent years, their recurrence indicates the need for both pre-emptive and longer-term solutions.  The Oregon State Legislature requested that Oregon State University Extension Services conduct a statewide needs assessment with Oregon farmers and ranchers to pursue this goal. The project team conducted 59 in-depth interviews over seven months, resulting in the following report. All activities and support needs noted in the report are grounded in farmer and rancher input and are intended to help frame and inform future policies and decision-making related to drought and heat in Oregon agriculture."
+    },
+    {
+      "tags": [ "irrigation", "technology", "spanish" ],
+      "validated": true,
+      "title": "Spanish-language Field Days",
+      "subtitle": "Oregon State University irrigation specialist highlights technology at Washington State University Spanish-language field day",
+      "lead_author": "Maria Zamora RE, Ph.D",
+      "additional_authors": [],
+      "lead_site": "Oregon State University",
+      "additional_sites": [],
+      "pub_date": "04/15/2024",
+      "url": "https://www.goodfruit.com/oregon-state-university-irrigation-specialist-highlights-technology-at-washington-state-university-spanish-language-field-day-video/",
+      "avatar": "MariaZamora.jpg",
+      "cover_image": "https://www.goodfruit.com/wp-content/uploads/wsuIrrigationFieldDay-10691tj-web.jpg",
+      "abstract": "Oregon State University’s Maria Zamora Re speaks about irrigation techniques during Washington State University’s Spanish-language field day dedicated to irrigation basics and management in tree fruit at the Roza research orchard in Prosser",
+      "body_html": "<p>Oregon State University’s Maria Zamora Re speaks about irrigation techniques during Washington State University’s Spanish-language field day dedicated to irrigation basics and management in tree fruit at the Roza research orchard in Prosser on May 8. The field day, “Día de campo: Importancia y manejo del riego en frutales,” covered topics including the relationships between soil, water and nutrition, plant sensors, irrigation planning and irrigation automation."
+    },
+    {
+      "tags": [ "irrigation", "agriculture", "climate", "groundwater", "depletion" ],
+      "validated": true,
+      "title": "Irrigation Water Use in the United States, 2008-2020",
+      "subtitle": "A US County-level mapping application exploring irrigation water use, surface and groundwater consumption and groundwater depletion",
+      "lead_author": "John Bolte, Ph.D.",
+      "avatar": "bolte.jpg",
+      "additional_authors": [],
+      "lead_site": "Oregon State University",
+      "additional_sites": [],
+      "pub_date": "04/01/2024",
+      "url": "/IrrigWaterUse",
+      "cover_image": "https://agwater.org/articles/images/CenterPivotAlachuaCounty.jpg",
+      "abstract": "A new, county-level dataset describing irrigation water withdrawals from surface and groundwater for twenty crops/cropping systems in the United States. An interactive, web-based mapping application allows exploration of this dataset, through maps and other forms of communications.",
+      "body_html": "<p> A new, county-level dataset describing irrigation water withdrawals from surface and groundwater for  twenty crops/cropping systems in the United States.  The dataset provides annual summaries for the period 2008 to 2020. An interactive, web-based mapping application allows exploration of this dataset, through maps and other forms of communications.</p>"
+    },
+    {
+      "tags": [ "climate", "drought", "sensing", "sensors" ],
+      "validated": true,
+      "title": "A New, Low-Cost Dendrometer",
+      "subtitle": "Developed at OSU's OPEnS lab, this new dendrometer promises accurate, low-cost sensing of plant water status change",
+      "lead_author": "Nicholas Le",
+      "additional_authors": [ "Lars Rasmussen" ],
+      "lead_site": "Oregon State University",
+      "additional_sites": [],
+      "pub_date": "02/15/2024",
+      "url": "https://github.com/OPEnSLab-OSU/OPEnS-Lab-Home/wiki/Dendrometer",
+      "avatar": "OPEnS.png",
+      "cover_image": "https://agwater.org/articles/images/Dendrometer.png",
+      "abstract": "A new, low-cost dendrometer developed at Oregon State University's OPEnS lab promises accurate, low-cost sensing of plant water status change. This article describes the device and its potential applications.",
+      "body_html": "<p>Increasing agricultural demand for freshwater in the face of a changing climate requires improved irrigation management solutions to maximize resource efficiency. Soil water deficits can significantly reduce plant growth and development, which dictates the quantity and quality of the crop. While plant-based measures of water deficits are considered to be the best measures of water stress, current methods for achieving precise stress measurements are time-consuming and inefficient. Dendrometers are one plant-based tool that have shown potential to improve irrigation management in high-value woody perennial crops. High-precision dendrometers continuously measure small fluctuations (± 10 microns) in stem diameter throughout the day, which directly correlates to water stress. However, currently available dendrometers are expensive, have mechanical hysteresis, and are subject to issues such as material expansion; weather and animal disruptions; and bulky, invasive design.</p><p>The Dendrometer created at the OPEnS Lab - tailored for grapevines and other woody perennials - alleviates these key failure points using zero-thermal expansion carbon fiber, spring tension, and a linear magnetic encoder. The device achieves 0.5-micron resolution, and thermal fluctuations are less than 1 micron over diurnal swings of 25° C. The cost of the device varies with build quantity, ranging from $225 to $450 per part, and assembly requires 4 to 6 hours per system. Dendrometers are currently being deployed with telemetry based on LoRa and WiFi, both under evaluation. Without solar charging and telemetry, the battery can power the device for over two years of operation. Mass deployment of dendrometers has the potential to provide a continuous record of water stress-driven changes in the dimensions of stems, providing valuable decision support for irrigation management.</p><p>The dendrometer is currently undergoing revisions for improvements after feedback from the 2023 summer growing season."
+    }
+  ]
+} 
+

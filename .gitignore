@@ -10,3 +10,4 @@
 /__pycache__
 /LogFiles
 services/character_validator.py
+*.log

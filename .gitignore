@@ -11,3 +11,4 @@
 /LogFiles
 services/character_validator.py
 *.log
+*.log

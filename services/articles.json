@@ -74,7 +74,7 @@
       "lead_site": "Oregon State University",
       "additional_sites": [],
       "pub_date": "04/01/2024",
-      "url": "/IrrigWaterUse",
+      "url": "/apps/IrrigWaterUse",
       "cover_image": "https://agwater.org/articles/images/CenterPivotAlachuaCounty.jpg",
       "abstract": "A new, county-level dataset describing irrigation water withdrawals from surface and groundwater for twenty crops/cropping systems in the United States. An interactive, web-based mapping application allows exploration of this dataset, through maps and other forms of communications.",
       "body_html": "<p> A new, county-level dataset describing irrigation water withdrawals from surface and groundwater for  twenty crops/cropping systems in the United States.  The dataset provides annual summaries for the period 2008 to 2020. An interactive, web-based mapping application allows exploration of this dataset, through maps and other forms of communications.</p>"

@@ -1,5 +1,5 @@
 from flask import Flask, request
-from routes import articles_bp, data_bp, energy_bp, email_bp
+from routes import articles_bp, data_bp, energy_bp, email_bp, llm_bp
 from config import config_by_name
 #from dotenv import load_dotenv
 import logging
@@ -37,6 +37,7 @@ app.register_blueprint(articles_bp)
 app.register_blueprint(data_bp)
 app.register_blueprint(energy_bp)
 app.register_blueprint(email_bp)
+app.register_blueprint(llm_bp)
 
 if __name__ == "__main__":
     app.run()

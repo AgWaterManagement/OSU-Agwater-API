@@ -61,6 +61,23 @@ def search_articles(keywords):
 
     return {'article_titles': matching_articles}
 
+def search_resources(keywords):
+    # this function scans filenames in the resources directory for keywords
+    resources_path = '/resources'
+    if not os.path.exists(resources_path):
+        return json.dumps({'error': 'Resources directory not found'})
+    matching_files = []
+    search_strs = keywords.lower().split()
+    for root, dirs, files in os.walk(resources_path):
+        for file in files:
+            if any(search_str in file.lower() for search_str in search_strs):
+                matching_files.append(file)
+    if not matching_files:
+        return json.dumps({'error': 'No matching resources found'})
+    return json.dumps({'matching_files': matching_files})
+
+
+
 def update_articles(articles):
 
     articles = get_articleInfo('articles')

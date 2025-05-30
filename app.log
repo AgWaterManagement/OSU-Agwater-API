@@ -46,3 +46,36 @@
 2025-05-29 21:49:03,627 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
 2025-05-29 21:50:13,110 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
 2025-05-29 21:50:17,312 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 10:51:40,403 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 10:51:40,419 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 10:51:40,427 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 11:09:19,851 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 11:09:19,883 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 11:27:30,571 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 11:27:30,586 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 12:51:20,575 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 12:51:34,816 - INFO - API Call: GET /LLM_Chat | Parameters: {} | Body: None
+2025-05-30 12:52:25,036 - INFO - API Call: GET /LLM_Chat | Parameters: {'prompt': 'water'} | Body: None
+2025-05-30 12:54:27,848 - INFO - API Call: GET /LLM_Chat | Parameters: {'prompt': ''} | Body: None
+2025-05-30 12:57:22,343 - INFO - API Call: GET /LLM_Chat | Parameters: {'prompt': ''} | Body: None
+2025-05-30 12:58:50,151 - INFO - API Call: GET /LLM_Chat | Parameters: {} | Body: None
+2025-05-30 13:01:53,559 - INFO - API Call: GET /LLM_Chat | Parameters: {} | Body: None
+2025-05-30 13:02:05,000 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:02:24,178 - INFO - API Call: GET /ArticleAuthors | Parameters: {} | Body: None
+2025-05-30 13:06:02,408 - INFO - API Call: GET /LLMChat | Parameters: {'prompt': 'water'} | Body: None
+2025-05-30 13:11:44,159 - INFO - API Call: GET /GetIrrigData | Parameters: {} | Body: None
+2025-05-30 13:12:32,479 - INFO - API Call: GET /IrrigUseData | Parameters: {} | Body: None
+2025-05-30 13:20:07,693 - INFO - API Call: GET /LLMChat | Parameters: {} | Body: None
+2025-05-30 13:20:23,467 - INFO - API Call: GET /LLMChat | Parameters: {'prompt': 'water'} | Body: None
+2025-05-30 13:20:56,671 - INFO - API Call: GET /LLMChat | Parameters: {'prompt': 'water'} | Body: None
+2025-05-30 13:33:56,742 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:33:57,023 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:33:57,070 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:34:20,605 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:34:20,652 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:34:52,291 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:34:52,338 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:36:14,384 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:36:14,431 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:36:18,388 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None
+2025-05-30 13:36:18,435 - INFO - API Call: GET /ArticleList | Parameters: {} | Body: None

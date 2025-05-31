@@ -57,9 +57,10 @@ def search_articles(keywords):
            any(search_str in author for author in authors for search_str in search_strs) or \
            any(search_str in site for site in sites for search_str in search_strs) or \
            any(search_str in body_html for search_str in search_strs):
-            matching_articles.append(article['title'])
+            #matching_articles.append(article['title'])
+            matching_articles.append(article)
 
-    return {'article_titles': matching_articles}
+    return {'articles': matching_articles}
 
 def search_resources(keywords):
     # this function scans filenames in the resources directory for keywords

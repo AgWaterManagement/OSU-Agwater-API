@@ -23,4 +23,5 @@ def update_articles_route():   # not correct
 @bp.route("/SearchArticles")
 def search_articles_route():
     search_str = request.args.get('keywords', '').lower()
-    return search_articles(search_str)
+    results  = search_articles(search_str)
+    return { 'success': True, 'results': results } if results else {'success': False, 'message': 'No articles found.'}

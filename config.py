@@ -10,6 +10,9 @@ class Config:
 
     # Paths
     AG_WATER_PATH = os.environ.get('AG_WATER_PATH', 'd:/Websites/AgWaterWebsite')
+    AG_WATER_DB_PATH = os.environ.get('AG_WATER_DB_PATH', 'd:/Websites/AgWaterAPI/sqliteDBs/AgWater.db')
+    AGRIMET_DB_PATH = os.environ.get('AGRIMET_DB_PATH', 'd:/Websites/AgWaterAPI/sqliteDBs/Agrimet.db')
+    AGRIMET_DATA_DIR = os.environ.get('AGRIMET_DATA_DIR', 'd:/Websites/AgWaterAPI/agrimet/histEtSummaries')
     IRRIGATION_DB_PATH = os.environ.get('IRRIGATION_DB_PATH', 'D:/Websites/AgWaterWebsite/src/pages/IrrigUseNW/Data/IrrigUse.sqlite')
 
     # Email settings
@@ -22,7 +25,7 @@ class DevelopmentConfig(Config):
     """Development-specific configuration."""
     DEBUG = True
     FLASK_ENV = 'development'
-    AG_WATER_PATH = 'd:/Websites/AgWaterReactDev'
+    AG_WATER_PATH = 'd:/Websites/AgWaterWebsite'
 
 class TestingConfig(Config):
     """Testing-specific configuration."""

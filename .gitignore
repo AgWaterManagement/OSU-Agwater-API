@@ -12,3 +12,10 @@
 services/character_validator.py
 *.log
 *.log
+.vscode/launch.json
+/.vscode
+/__pycache__
+/agrimet/__pycache__
+/__pycache__
+__pycache__/app.cpython-312.pyc
+/sqliteDBs
